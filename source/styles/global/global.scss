@@ -1,1 +1,51 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+
+/* Для скрытия элементов со страницы, но видимости для скринридеров */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  background-color: #ccc;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  background-color: #000;
+  color: #fff;
+  @include breakpoint($width-tablet) {
+    min-width: $width-tablet;
+  }
+}
+
+/* Прижатие футера к низу страницы */
+.page-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  @include breakpoint($width-tablet) {
+    top: -88px;
+  }
+  @include breakpoint($width-desktop) {
+    top: -88px;
+  }
+}
+

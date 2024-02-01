@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-logo" src="images/main-logo.svg" alt="Переход на главную страницу Rey Negro" width="230"
+        height="50">
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Наш товар</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--gold" href="index.html">Получить прайс</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="menu-burger">
+      <span class="menu-burger__toggle"></span>
+    </button>
+  </header>
+
+  <main class="page-main">
+    <div class="main-preview">
+      <img src="/images/main-preview/main-preview@1x.png" alt="Заглавная страница сайта">
+    </div>
+    <div class="main-preview">
+      <img src="/images/main-preview/main-preview@1x.png" alt="Заглавная страница сайта">
+    </div>
+  </main>
+
+  <footer class="main-footer">footer</footer>
+</body>
+
 </html>

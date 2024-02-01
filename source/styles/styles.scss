@@ -1,7 +1,12 @@
 /* GLOBAL */
 @import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/normalize.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
 
+
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/menu-burger.scss";
+@import "./blocks/main-preview.scss";
