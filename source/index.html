@@ -11,8 +11,8 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-logo" src="images/main-logo.svg" alt="Переход на главную страницу Rey Negro" width="230"
+    <a class="main-logo" href="index.html">
+      <img class="main-logo__img" src="images/main-logo.svg" alt="Переход на главную страницу Rey Negro" width="230"
         height="50">
     </a>
 
@@ -31,20 +31,429 @@
     </nav>
 
     <button class="menu-burger">
+      <span class="visually-hidden">Кнопка вызова меню</span>
       <span class="menu-burger__toggle"></span>
     </button>
   </header>
 
   <main class="page-main">
-    <div class="main-preview">
+    <h1 class="visually-hidden">Производство кофе Rey Negro</h1>
+    <div class="page-main__preview">
       <img src="/images/main-preview/main-preview@1x.png" alt="Заглавная страница сайта">
     </div>
-    <div class="main-preview">
-      <img src="/images/main-preview/main-preview@1x.png" alt="Заглавная страница сайта">
-    </div>
+
+    <section class="main-info">
+      <div class="products">
+        <ul class="products__list">
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_1--big@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO ARABICA</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 1000 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="card-button__title">купить на</span>
+                  <img class="card-button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_2--big@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO BARISTA</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 1000 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_3--big@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO DE LUX</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 1000 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-block text-block--text-center">
+        <div class="text-block__container">
+          <h2 class="text-block__title">ГАРАНТИЯ КАЧЕСТВА!</h2>
+          <p class="text-block__description">На нашем производстве мы используем передовые технологии обжарки зерна,
+            которые обеспечивают полный контроль
+            над ароматом, текстурой и вкусом. Контроль качества обжарки на каждом этапе. <br>Мы гарантируем поставки
+            только
+            высококачественного готового продукта с равномерной степенью обжарки. </p>
+        </div>
+      </div>
+
+      <div class="products">
+        <ul class="products__list">
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_1--mediun@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO ARABICA</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 500 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="card-button__title">купить на</span>
+                  <img class="card-button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_2--medium@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO BARISTA</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 500 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_3--medium@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO DE LUX</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 500 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-block text-block--text-left">
+        <div class="text-block__container">
+          <h2 class="text-block__title">ИНДИВИДУАЛЬНЫЙ ПОДХОД</h2>
+          <p class="text-block__description">В центре нашей философии лежит индивидуальность. Мы приглашаем вас в мир
+            гибкого и индивидуального партнерства. Наша компания с готовностью предоставляет уникальные условия
+            сотрудничества для предприятий малого и среднего бизнеса, а также для сферы HoReCa. Мы тщательно учитываем
+            уникальные потребности каждого клиента и создаем наилучшие возможности сотрудничества, гарантируя вам доступ
+            к
+            продукту высочайшего качества</p>
+          <button type="button" class="button text-block__button">
+            <span class="button__title">Связаться с нами</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="products">
+        <ul class="products__list">
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_1--small@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO ARABICA</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 200 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="card-button__title">купить на</span>
+                  <img class="card-button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_2--small@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO BARISTA</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 200 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="product-preview">
+              <img class="product-preview__img" src="images/product-preview/product_preview_3--small@1x.png"
+                alt="Rey Negro Arabica" width="584" height="548">
+            </div>
+            <div class="product-info">
+              <span class="card-info__title">REY NEGRO DE LUX</span>
+              <span class="card-info__sub-title">100% Арабика </span>
+              <ul class="card-info__compound-list">
+                <li class="card-product__compound-item">
+                  <b>Состав:</b> кофе натуральный жареный в зернах , средней обжарки
+                </li>
+                <li class="card-product__compound-item">
+                  <b>Условия хранения:</b> хранить в сухом прохладном месте , при температуре не выше 27 С и
+                  относительной
+                  влажности воздуха не более 75
+                </li>
+                <li class="card-product__compound-item"><b>Срок годности:</b> 18 месяцев</li>
+                <li class="card-product__compound-item"><b>Масса нетто:</b> 200 гр</li>
+                <li class="card-product__compound-item"><b>Гост 32775-2014</b></li>
+              </ul>
+              <div class="buttons-container">
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/ozon.svg" alt="Переход в магазин Озон">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/wildberries.svg"
+                    alt="Переход в магазин Вайлдбериз">
+                </button>
+                <button type="button" class="button">
+                  <span class="button__title">купить на</span>
+                  <img class="button__icon" src="images/product-buttons/yandex.svg"
+                    alt="Переход в магазин ЯндексМаркет">
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-block text-block--text-right">
+        <div class="text-block__container">
+          <h2 class="text-block__title">ВЫГОДНАЯ ЦЕНА</h2>
+          <p class="text-block__description">Собственное производство и прямые поставки сырья от надежных производителей
+            создают основу для наших преимущественных цен как в розницу, так и оптом. Наша способность контролировать
+            каждый этап производства и обеспечивать значительные объемы дает нам возможность предлагать вам выгодные
+            тарифы, сочетая исключительное качество с доступностью.</p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="main-footer">footer</footer>
+  <footer class="main-footer">
+    <a class="main-footer__logo" href="index.html">
+      <img class="main-logo" src="images/main-logo.svg" alt="Переход на главную страницу Rey Negro" width="230"
+        height="50">
+    </a>
+  </footer>
 </body>
 
 </html>

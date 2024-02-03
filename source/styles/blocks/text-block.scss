@@ -1,0 +1,100 @@
+.text-block {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 100px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 12px;
+  align-items: center;
+
+  .text-block__container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  &--text-center {
+    background-image: url("/images/text-block/text-block-bg-1@1x.png");
+  }
+  &--text-left {
+    background-image: url("/images/text-block/text-block-bg-2@1x.png");
+    background-position: 70%;
+    .text-block__container {
+      align-items: center;
+    }
+  }
+  &--text-right {
+    background-image: url("/images/text-block/text-block-bg-3@1x.png");
+  }
+
+  @include breakpoint($width-tablet) {
+    padding: 60px 70px 210px;
+
+    &--text-left {
+      .text-block__container {
+        max-width: 95%;
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+
+    &--text-right {
+      align-items: flex-end;
+      .text-block__container {
+        text-align: left;
+        max-width: 500px;
+      }
+    }
+  }
+  @include breakpoint($width-desktop) {
+    &--text-center {
+      padding: 100px 100px 320px;
+    }
+    &--text-left {
+      padding: 100px 100px 145px;
+      align-items: flex-start;
+      .text-block__container {
+        max-width: 1045px;
+      }
+    }
+    &--text-right {
+      padding: 145px 100px 100px;
+      .text-block__container {
+        max-width: 650px;
+      }
+    }
+  }
+}
+
+.text-block__title {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 20px;
+  @include breakpoint($width-tablet) {
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  @include breakpoint($width-desktop) {
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+}
+
+.text-block__description {
+  font-size: 17px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  @include breakpoint($width-tablet) {
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  @include breakpoint($width-desktop) {
+    font-size: 29px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+}

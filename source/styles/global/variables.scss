@@ -13,6 +13,18 @@ $width-mobile: 320px;
 $max-width: 1920px;
 
 // z-index header
+$main-header--z-index: 2;
+// z-index span для кнопок
+$card-button__title--z-index: 2;
 
-$main-header--z-index: 2
+// font-size для заголовка карточки товара
+$card-info__title--fs-normal: 24px;
+$card-info__title--fs-small: 18px;
 
+//font-size для доп. заголовка карточки товара
+$card-info__sub-title--fs-normal: 17px;
+$card-info__sub-title--fs-small: 14px;
+
+//font-size для доп. заголовка карточки товара
+$card-info__compound-list-normal: 17px;
+$card-info__compound-list-small: 14px;

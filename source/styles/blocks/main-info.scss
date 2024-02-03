@@ -1,0 +1,14 @@
+.main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  @include breakpoint($width-tablet) {
+    padding: 30px 30px;
+  }
+  @include breakpoint($width-desktop) {
+    padding: 40px 45px;
+  }
+}

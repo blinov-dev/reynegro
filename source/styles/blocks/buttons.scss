@@ -1,0 +1,36 @@
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 12px;
+  border: 1.5px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+}
+.text-block__button {
+  width: 100%;
+  @include breakpoint($width-tablet) {
+    max-width: 300px;
+  }
+}
+
+.button__title {
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #fff;
+}
+
+.button__icon {
+  max-width: 90px;
+  max-height: 30px;
+}
