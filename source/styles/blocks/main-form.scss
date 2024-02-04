@@ -1,0 +1,139 @@
+.main-form {
+  border-radius: 12px;
+  background-color: rgba(25, 22, 28, 0.8);
+  font-size: 34px;
+  line-height: 29px;
+  padding: 20px;
+
+  @include breakpoint($width-tablet) {
+    padding: 65px;
+  }
+}
+
+.main-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main-form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  span {
+    color: rgba(248, 228, 190, 0.8);
+  }
+
+  @include breakpoint($width-tablet) {
+    font-size: 34px;
+    line-height: 29px;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+}
+
+.form__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  @include breakpoint($width-tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 900px;
+  }
+}
+
+.form-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .form-text__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint($width-tablet) {
+      font-size: 34px;
+      line-height: 42px;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .form-text__description {
+    font-size: 16px;
+    line-height: 16px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @include breakpoint($width-tablet) {
+      font-size: 30px;
+      line-height: 38px;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  @include breakpoint($width-tablet) {
+    text-align: left;
+  }
+
+}
+
+.form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  button {
+    text-transform: uppercase;
+    padding: 10px 0;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @include breakpoint($width-tablet) {
+      padding: 20px 0;
+    }
+  }
+
+  @include breakpoint($width-tablet) {
+    gap: 40px;
+  }
+}
+
+.form__input {
+  border-radius: 12px;
+  border: 1.5px solid #fff;
+  background: transparent;
+  padding: 10px;
+  color: #fff;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &::placeholder{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @include breakpoint($width-tablet) {
+    padding: 20px;
+  }
+}

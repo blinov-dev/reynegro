@@ -49,8 +49,5 @@ body {
   @include breakpoint($width-tablet) {
     top: -88px;
   }
-  @include breakpoint($width-desktop) {
-    top: -88px;
-  }
 }
 

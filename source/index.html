@@ -448,7 +448,32 @@
       <div class="video-block">
         <div class="video-block__container">
           <div class="video-player">
-            <img src="" alt="">
+            <img class="video-player__bg-img" src="images/videoplayer/videoplayer@1x.png" alt="Видеоплейер" width="1100" height="640">
+            <img class="video-player__control" src="images/videoplayer/play-button.svg" alt="Запустить видео">
+          </div>
+        </div>
+      </div>
+
+      <div class="main-form">
+        <div class="main-form__container">
+          <h2 class="main-form__title">ПОЛУЧИ <span>ОПТОВЫЙ ПРАЙС</span> ПРЯМО СЕЙЧАС!</h2>
+          <div class="form__container">
+            <div class="form-text">
+              <h3 class="form-text__title">ПРЕДЛОЖЕНИЕ<br>
+                ДЛЯ КОРПОРАТИВНЫХ КЛИЕНТОВ</h3>
+              <p class="form-text__description">Индивидуальные условия! <br>Для бизнеса, для офисов, ресторанов, кофеен, отелей </p>
+            </div>
+            <form class="form" action="#" method="post" name="get-price">
+              <label for="name" class="visually-hidden"></label>
+              <input class="form__input" id="name" type="text" placeholder="ИМЯ">
+              <label for="email" class="visually-hidden"></label>
+              <input class="form__input" id="email" type="email" placeholder="E-mail">
+              <label for="phone" class="visually-hidden"></label>
+              <input class="form__input" id="phone" type="tel" placeholder="ТЕлефон">
+              <button type="submit" class="button">
+                <span class="card-button__title">получить оптовый прайс</span>
+              </button>
+            </form>
           </div>
         </div>
       </div>
